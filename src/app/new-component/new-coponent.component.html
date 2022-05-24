@@ -1,0 +1,32 @@
+<p>wellcome-coponent works!</p>
+Lets start
+<button mat-icon-button disabled aria-label="Lets start">
+   
+    <form class="register-form">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>user name</mat-label>
+          <input matInput placeholder="user name" [(ngModel)]="inuserRegister.userName" name="userName">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>password</mat-label>
+          <input matInput placeholder="password" [(ngModel)]="inuserRegister.passwprd" name="passwprd" >
+        </mat-form-field>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Id</mat-label>
+            <input matInput placeholder="Id" [(ngModel)]="inuserRegister.Id" name="Id">
+          </mat-form-field>
+        
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>account</mat-label>
+            <input matInput placeholder="account"[(ngModel)]="inuserRegister.Account" name="account">
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>currency</mat-label>
+            <input matInput placeholder="currency"[(ngModel)]="inuserRegister.currency" name="currency">
+          </mat-form-field>
+          <mat-icon (click)="startMeet()">Register</mat-icon>
+          <mat-icon (click)="startLogin()">Login</mat-icon>
+      </form>
+      {{message}}
+</button>
